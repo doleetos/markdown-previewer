@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 }
 
 :root {
+    background-color: #ffeab4;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -17,10 +20,24 @@ body {
     margin: 1rem auto;
 }
 
+#editor-bar, #preview-bar {
+    background-color: #f3d996;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px 2px #7a784b;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+    height: 20px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #editor, #preview {
     background-color: #F5E8C7;
     width: 100%;
     min-height: 200px;
+    box-shadow: 1px 1px 10px 2px #7a784b;
 }
 
 #editor {
@@ -38,6 +55,9 @@ body {
 }
 
 #preview {
+    border-width: 0 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
     padding: 1.5rem;
     text-align: left;
     line-height: 1.5;
@@ -56,4 +76,31 @@ body {
 
 #preview ul, ol {
     list-style-position: inside;
+}
+
+.expand {
+    height: 100vh;
+}
+
+#preview code {
+    font-weight: bold;
+    background-color: white;
+}
+
+blockquote {
+    border-left: 3px solid black;
+    margin-left: 15px;
+}
+
+blockquote p {
+    margin-left: 5px;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 10px;
+}
+
+ul ul ul {
+    list-style-type: square;
 }
