@@ -6,6 +6,7 @@
         <title>Markdown Previewer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/6c409f6053.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.18/marked.min.js" integrity="sha512-6MhVG3FdJSogKdAFmdGWvJ/QCBTPhs0dd3ad89H+ZVGJ721bOo2CTlaiG4Ov6l422KGQStYrfOD4HASBvO6sZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
 
@@ -13,6 +14,7 @@
         <div id="main-container">
             <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
             <div class="editor-wrap">
+                <div id="editor-bar"><strong><i class="fa-solid fa-code"></i> Editor</strong><i id="editor-expand" class="fa-solid fa-up-right-and-down-left-from-center fa-down-left-and-up-right-to-center" style="cursor: pointer;"></i></div>
                 <textarea id="editor" type="text"># Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
@@ -55,12 +57,12 @@ And here. | Okay. | I think we get it.
 1. Use just 1s if you want!
 1. And last but not least, let's not forget embedded images:
 
-![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
-</textarea>
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)</textarea>
             </div>
             
 
             <div class="preview-wrap">
+                <div id="preview-bar"><strong><i class="fa-solid fa-code"></i> Previewer</strong> <i id="preview-expand" class="fa-solid fa-up-right-and-down-left-from-center fa-down-left-and-up-right-to-center" style="cursor: pointer;"></i></div>
                 <div id="preview">
 
                 </div>
